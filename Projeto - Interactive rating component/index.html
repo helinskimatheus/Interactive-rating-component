@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon-star.svg">
+  <link rel="stylesheet" href="./styles/styleBody.css">
+  <link rel="stylesheet" href="./styles/styleMain.css">
+  <link rel="stylesheet" href="./styles/styleFooter.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Interactive rating component</title>
+
+  <script src="./javascript/javascript.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <main>
+      <div class="container-active-states">
+        <div class="icon-star">
+          <img src="./assets/icon-star.svg">
+        </div>
+        <div class="title">
+          <h3>How did we do?</h3>
+        </div>
+        <div class="paragraph">
+          <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+            offering!</p>
+        </div>
+        <div class="rating">
+          <ul>
+            <a href="#" onmouseover="changeStyleTemporarily(1)" onclick="changeStyleDefinitely(1)">
+              <li>1</li>
+            </a>
+            <a href="#" onmouseover="changeStyleTemporarily(2)" onclick="changeStyleDefinitely(2)">
+              <li>2</li>
+            </a>
+            <a href="#" onmouseover="changeStyleTemporarily(3)" onclick="changeStyleDefinitely(3)">
+              <li>3</li>
+            </a>
+            <a href="#" onmouseover="changeStyleTemporarily(4)" onclick="changeStyleDefinitely(4)">
+              <li>4</li>
+            </a>
+            <a href="#" onmouseover="changeStyleTemporarily(5)" onclick="changeStyleDefinitely(5)">
+              <li>5</li>
+            </a>
+          </ul>
+        </div>
+        <div class="button-submit">
+          <button type="submit" onclick="changeContainerStates()">SUBMIT</button>
+        </div>
+      </div>
+      <div class="container-thank-you-states">
+        <div class="div-img-thank-you">
+          <img src="./assets/illustration-thank-you.svg" id="img-thank-you">
+        </div>
+        <div class="div-chosen-rating">
+          <p id="text-chosen-rating">You selected # out of #</p>
+        </div>
+        <div class="div-title-thank-you">
+          <h3>Thank you!</h3>
+        </div>
+        <div class="div-paragraph-thank-you">
+          <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in
+            touch!</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="footer-position">
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/helinskimatheus" target="_blank">Matheus Helinski</a>.
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

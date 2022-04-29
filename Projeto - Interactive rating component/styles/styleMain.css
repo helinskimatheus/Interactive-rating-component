@@ -1,0 +1,166 @@
+
+.container{ /*Código para o container geral da página!*/
+    background-color: hsl(216, 12%, 8%);
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-active-states,
+.container-thank-you-states{ /*Código de elementos em comum dos dois containers principais!*/
+    width: 350px;
+    height: 370px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 18px;
+}
+.container-active-states{ /*Código para o container da avaliação ativa da página!*/
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.container-thank-you-states{ /*Código para o container de agradecimento após a realização da avaliação!*/
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+}
+.change-active-states{ /*Altera o display do "container-active-states" com JS*/
+    display: none;
+}
+.change-thank-you-states{ /*Altera o display do "container-thank-you-states" com JS*/
+    display: flex;
+}
+
+/*Início do código para tela da avaliação ativa!*/
+.container-active-states div{
+    margin-left: 25px;
+    margin-right: 25px;
+    flex-grow: 1;
+    display: flex;
+}
+.icon-star{
+    margin-top: 25px;
+    align-items: flex-start;
+}
+.icon-star img{
+    padding: 14px;
+    border-radius: 45px;
+    background-color: hsl(213, 19%, 25%);
+    opacity: 0.7;
+}
+.title{
+    align-items: flex-start;
+}
+.title h3{
+    font-family: 'Overpass', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 25.3px;
+}
+.paragraph{
+    align-items: flex-start;
+}
+.paragraph p{
+    font-family: 'Overpass', sans-serif;
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+.rating{
+    align-items: flex-start;
+}
+.rating ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+}
+.rating a{
+    text-decoration: none;
+    color: hsl(217, 12%, 63%);
+}
+.rating li{
+    background-color: hsl(213, 19%, 25%);
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-submit{
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+.button-submit button{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border-style: none;
+    padding: 12px 118.50px;
+    border-radius: 45px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+
+    transition-property: color;
+    transition-duration: 0s;
+}
+.button-submit button:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+/*Fim do código para tela da avaliação ativa!*/
+
+/*Início do código para tela thank-you (pós avaliação)!*/
+.container-thank-you-states div{
+    margin-left: 25px;
+    margin-right: 25px;
+    flex-grow: 1;
+    display: flex;
+}
+.div-img-thank-you{
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.div-chosen-rating{
+    align-items: center;
+    justify-content: center;
+}
+.div-chosen-rating p{
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    color: hsl(25, 97%, 53%);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 25%);
+}
+.div-title-thank-you{
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Overpass', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    text-align: center;
+}
+.div-paragraph-thank-you{
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(217, 12%, 63%);
+}
+/*Fim do código para tela thank-you (pós avaliação)!*/

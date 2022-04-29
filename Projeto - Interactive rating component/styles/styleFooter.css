@@ -1,0 +1,20 @@
+/*Código para fixar o footer no final da tela.*/
+.footer-position{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 20px;
+}
+
+/*Código estilizar o footer.*/
+.attribution{
+    font-family: 'Overpass', sans-serif;
+    font-size: 11px; 
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+}
+.attribution a{
+    color: rgb(52, 52, 143);
+    text-decoration: none;
+    cursor: pointer;
+}
